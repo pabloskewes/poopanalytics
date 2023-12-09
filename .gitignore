@@ -3,3 +3,6 @@ data/WhatsApp Chat with Caca.txt
 
 # venv
 venv/
+
+# cache and checkpoints
+*__pycache__/
