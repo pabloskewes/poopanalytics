@@ -22,7 +22,17 @@ def load_data(path: Path) -> pd.DataFrame:
             "message": user_and_message[1].str.strip(),
         }
     )
-
-    data = data[data["message"] == POOP_EMOJI]
-
     return data
+
+
+def process_data(data: pd.DataFrame) -> pd.DataFrame:
+    """Processes the given data and returns a pandas DataFrame"""
+    
+    data = data.copy()
+    data = data[data["message"] == POOP_EMOJI]
+    
+    data['date'] = pd.to_datetime(data['date'], format='%m/%d/%y')
+    data['time'] = pd.to_datetime(data['time'], format='%I:%M %p')
+    return data
+    
+    
