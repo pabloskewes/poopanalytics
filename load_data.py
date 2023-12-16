@@ -33,6 +33,9 @@ def process_data(data: pd.DataFrame) -> pd.DataFrame:
     
     data['date'] = pd.to_datetime(data['date'], format='%m/%d/%y')
     data['time'] = pd.to_datetime(data['time'], format='%I:%M %p')
+    data['datetime'] = data['date'] + pd.to_timedelta(data['time'].dt.hour, unit='h') + pd.to_timedelta(data['time'].dt.minute, unit='m')
+    
+
     return data
     
     
