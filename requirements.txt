@@ -1,3 +1,6 @@
 pandas
 matplotlib
 jupyterlab
+plotly
+streamlit
+
