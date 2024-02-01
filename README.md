@@ -20,3 +20,28 @@ Have ideas for new poop metrics? Want to enhance the Poop Awards ceremony? We we
 Remember, life's too short to take everything seriously—especially when it comes to poop. Dive into the whimsical world of Poopalytics and turn your bathroom breaks into a statistical adventure! 💩📊✨
 
 Disclaimer: Poopalytics is purely for entertainment purposes and is not meant to be taken seriously. Enjoy responsibly!
+
+## Installation
+1. Clone the repo
+   ```sh
+   git clone https://github.com/pabloskewes/poopanalytics
+    ```
+
+2. Create a virtual environment
+   ```sh
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Install requirements
+   ```sh
+    pip install -r requirements.txt
+    ```
+    
+## Usage
+To run the streamlit app:
+```sh
+streamlit run app.py
+```
+
+You can also run the notebooks in the `notebooks` folder to get the stats. In order to do so, you need to download your WhatsApp chat history and place it in the `data` folder. Then, you can run the notebook `caca.ipynb` to get the stats.
